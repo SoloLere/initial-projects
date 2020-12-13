@@ -1,0 +1,112 @@
+
+body{
+    font-family: 'Barlow Semi Condensed',Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 13px;
+    text-rendering: optimizeLegibility;
+    background-color: rgb(193, 222, 225);
+}
+h1{
+    margin: 0;
+    font-weight: 1.4;
+    font-size: 120%;
+}
+p{
+    margin-top: 0;
+}
+
+.testimonial{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1em;
+}
+
+
+/* -- REUSABLE CODES-- */
+
+.highlight{
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.verified{
+    opacity: 50%;
+}
+
+.upper{
+    margin-bottom: 2em;
+}
+
+.images{
+    float: left;
+    border-radius: 50px;
+    margin-right: 1.5em;
+    border: 1px solid rgb(255, 255, 255);
+    width: 30px;
+}
+
+.review-paragraph{
+    opacity: 70%;
+}
+
+/* --INDIVIDUAL GRIDS-- */
+
+.Daniel{
+    grid-column: 1/3;
+    color: white;
+    background: hsl(263, 55%, 52%)  url(images/bg-pattern-quotation.svg) no-repeat 90% 0%;
+    grid-column: 1/3;;
+    padding: 2em;
+    border-radius: 10px;
+}
+.Jonathan{
+    background-color:  hsl(217, 19%, 35%);
+    color: white;
+    padding: 2em;
+    border-radius: 10px;
+}
+.Kira{
+    grid-row: 1/3;
+    grid-column: 4;
+    padding: 2em;
+    border-radius: 10px;
+    background-color: white;
+}
+.Jeanette{
+    padding: 2em;
+    border-radius: 10px;
+    background-color: white;
+}
+.Patrick{
+    grid-column: 2/4;
+    background-color:hsl(219, 29%, 14%);
+    padding: 2em;
+    border-radius: 10px;
+    color: white;
+}
+
+/* --FOOTER-- */
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media only screen and (max-width: 375px) {
+    .testimonial{
+        display: block;
+        margin: 50px 5px;
+        
+    }
+    .testimonial > section{
+        margin-bottom: 1.5em;
+    }
+    .testimonial > section:last-child{
+        margin-bottom: 0;
+    }
+}
